@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .gradient-text {
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .profile-container {
+        padding: 4px;
+        background: linear-gradient(135deg, #60A5FA 0%, #34D399 100%);
+        border-radius: 9999px;
+        display: inline-block;
+    }
+    .sparkle {
+        animation: pulse 2s infinite;
+    }
+}

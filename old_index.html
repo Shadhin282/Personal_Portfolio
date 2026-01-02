@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Shadin Khan - Portfolio </title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<script>
+    
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#374151", // Dark slate gray from the text in the image
+                        "background-light": "#F9FAFB", // Very light gray for light mode bg
+                        "background-dark": "#111827", // Dark gray/black for dark mode bg
+                        "nav-border-light": "#6B7280", // Gray-500 for the border
+                        "nav-border-dark": "#4B5563", // Gray-600 for dark mode border
+                        "nav-text-light": "#374151", // Gray-700
+                        "nav-text-dark": "#E5E7EB", // Gray-200
+                        "nav-hover-light": "#F3F4F6",
+                        "nav-hover-dark": "#1F2937",
+                    },
+                    fontFamily: {
+                        display: ["Inter", "sans-serif"],
+                        sans: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                        'pill': '9999px',
+                    },
+                     backgroundImage: {
+                        'gradient-text': 'linear-gradient(to right, #10b981, #3b82f6)', // Green to Blue gradient
+                        'gradient-border': 'linear-gradient(to right, #3b82f6, #10b981)', // Blue to Green for circle
+                    }
+                },
+            },
+        };
+    </script>
+    <style> 
+          .gradient-text {
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .profile-container {
+            padding: 4px;background: linear-gradient(135deg, #60A5FA 0%, #34D399 100%);
+            border-radius: 9999px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark min-h-screen  items-center justify-center font-sans antialiased transition-colors duration-300 p-8">
+<nav class="w-full max-w-4xl mx-auto">
+<div class="relative flex items-center justify-between px-8 py-4 border border-nav-border-light dark:border-nav-border-dark rounded-full bg-white dark:bg-gray-800 shadow-sm transition-all duration-300">
+<div class="flex-shrink-0">
+<a class="text-xl font-bold tracking-tight text-nav-text-light dark:text-nav-text-dark hover:text-black dark:hover:text-white transition-colors" href="#">
+                    Shadin Khan
+                </a>
+</div>
+<div class="flex md:hidden">
+<button class="text-nav-text-light dark:text-nav-text-dark hover:text-gray-900 dark:hover:text-white focus:outline-none" type="button">
+<span class="material-icons">menu</span>
+</button>
+</div>
+<div class="hidden md:flex md:items-center md:space-x-8">
+<a class="text-sm font-semibold text-nav-text-light dark:text-nav-text-dark hover:text-black dark:hover:text-white transition-colors relative group" href="#">
+                    Resume
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-nav-text-light dark:bg-nav-text-dark transition-all group-hover:w-full"></span>
+</a>
+<a class="text-sm font-semibold text-nav-text-light dark:text-nav-text-dark hover:text-black dark:hover:text-white transition-colors relative group" href="#">
+                    Work
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-nav-text-light dark:bg-nav-text-dark transition-all group-hover:w-full"></span>
+</a>
+<a class="text-sm font-semibold text-nav-text-light dark:text-nav-text-dark hover:text-black dark:hover:text-white transition-colors relative group" href="#">
+                    Blog
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-nav-text-light dark:bg-nav-text-dark transition-all group-hover:w-full"></span>
+</a>
+<a class="text-sm font-semibold text-nav-text-light dark:text-nav-text-dark hover:text-black dark:hover:text-white transition-colors relative group" href="#">
+                    About
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-nav-text-light dark:bg-nav-text-dark transition-all group-hover:w-full"></span>
+</a>
+</div>
+<button class="fixed bottom-4 right-4 p-3 bg-white dark:bg-gray-800 text-gray-800 dark:text-white rounded-full shadow-lg border border-gray-200 dark:border-gray-700 hover:scale-105 transition-transform" onclick="document.documentElement.classList.toggle('dark')">
+<span class="material-icons dark:hidden">dark_mode</span>
+<span class="material-icons hidden dark:block">light_mode</span>
+</button>
+</div>
+
+</nav>
+
+
+<section class="bg-background-light dark:bg-background-dark font-sans min-h-screen flex items-center justify-center transition-colors duration-300">
+<div class="absolute top-4 right-4">
+<button class="p-2 rounded-full bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700 transition" onclick="document.documentElement.classList.toggle('dark')">
+<i class="fas fa-moon dark:hidden"></i>
+<i class="fas fa-sun hidden dark:block"></i>
+</button>
+</div>
+<main class="container mx-auto px-4 py-16 text-center max-w-4xl">
+<div class="mb-8">
+<div class="profile-container">
+<div class="bg-background-light dark:bg-background-dark rounded-full p-1">
+<img alt="shadin Profile Picture" class="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-transparent" src="https://i.ibb.co.com/fzNKPY6m/03.jpg"/>
+</div>
+</div>
+</div>
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight">
+<span class="bg-gradient-text  gradient-text from-green-500 to-blue-500 bg-clip-text text-transparent">
+                Hi, I’m Shadin :)
+            </span>
+</h1>
+<p class="text-xl md:text-2xl text-secondary-text-light dark:text-secondary-text-dark leading-relaxed mb-12 max-w-3xl mx-auto font-medium">
+             Frontend Web Developer 
+With a strong background in building modern, scalable, and user-focused web applications.  
+            <a class="underline decoration-2 underline-offset-4 decoration-gray-400 dark:decoration-gray-600 hover:decoration-blue-500 dark:hover:decoration-blue-400 transition-colors text-text-light dark:text-text-dark" href="#"></a> 
+           solving real-world problems through clean code, structured architecture, and intuitive user interfaces..
+        </p>
+<div class="flex flex-wrap justify-center items-center gap-8 md:gap-12 text-secondary-text-light dark:text-secondary-text-dark">
+<a class="group flex items-center gap-2 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200" href="#">
+<span class="text-2xl">
+<i class="far fa-file-alt"></i>
+</span>
+<span class="font-medium text-lg">Resume</span>
+</a>
+<a class="group flex items-center gap-2 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200" href="#">
+<span class="text-2xl">
+<i class="fab fa-linkedin"></i>
+</span>
+<span class="font-medium text-lg">Linkedin</span>
+</a>
+<a class="group flex items-center gap-2 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200" href="#">
+<span class="text-2xl">
+<i class="fab fa-medium"></i>
+</span>
+<span class="font-medium text-lg">Medium</span>
+</a>
+<a class="group flex items-center gap-2 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200" href="#">
+<span class="text-2xl">
+<i class="fab fa-figma"></i>
+</span>
+<span class="font-medium text-lg">Figma</span>
+</a>
+</div>
+</main>
+
+</section>
+
+
+<section class="bg-background-light dark:bg-background-dark min-h-screen flex items-center justify-center font-sans transition-colors duration-300">
+<section class="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 overflow-hidden">
+<div class="absolute inset-y-0 left-1/2 transform -translate-x-1/2 w-px grid-line hidden lg:block z-0 pointer-events-none opacity-60"></div>
+<div class="absolute top-10 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-green-200 dark:text-green-900 hidden lg:block z-0">
+<svg class="sparkle w-12 h-12" fill="currentColor" height="48" viewBox="0 0 24 24" width="48">
+<path d="M12,0 L14,10 L24,12 L14,14 L12,24 L10,14 L0,12 L10,10 Z"></path>
+</svg>
+</div>
+<div class="absolute top-1/3 left-[55%] text-pink-300 dark:text-pink-900 hidden lg:block z-0 opacity-60">
+<svg class="sparkle w-8 h-8 delay-700" fill="currentColor" height="32" viewBox="0 0 24 24" width="32">
+<path d="M12,0 L14,10 L24,12 L14,14 L12,24 L10,14 L0,12 L10,10 Z"></path>
+</svg>
+</div>
+<div class="absolute bottom-20 right-10 lg:right-40 text-purple-200 dark:text-purple-900 z-0">
+<svg class="sparkle w-10 h-10 delay-300" fill="currentColor" height="40" viewBox="0 0 24 24" width="40">
+<path d="M12,0 L14,10 L24,12 L14,14 L12,24 L10,14 L0,12 L10,10 Z"></path>
+</svg>
+</div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
+<div class="flex flex-col space-y-8 lg:pr-8">
+<div class="flex items-center space-x-4">
+<span class="text-primary font-bold text-lg tracking-wide">E-commerce</span>
+<div class="flex items-center space-x-1 px-3 py-1 rounded-full border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-xs font-medium text-slate-600 dark:text-slate-300 shadow-sm">
+<span class="material-icons-outlined text-[14px]">auto_awesome</span>
+<span>Launched</span>
+</div>
+</div>
+<h2 class="text-4xl lg:text-5xl font-extrabold text-text-light dark:text-text-dark leading-tight tracking-tight">
+                    Redesigning an e-commerce platform for artisans
+                </h2>
+<div class="text-lg text-muted-light dark:text-muted-dark font-medium leading-relaxed">
+                    Retail • B2B • Web App • Design System
+                </div>
+<div class="pt-4">
+<a class="group inline-flex items-center text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#">
+<div class="relative flex items-center justify-center w-12 h-12 rounded-full border border-slate-300 dark:border-slate-600 group-hover:border-primary dark:group-hover:border-primary transition-colors duration-200">
+<span class="material-icons-outlined transform group-hover:translate-x-1 transition-transform duration-200">arrow_forward</span>
+</div>
+<span class="ml-4 font-semibold text-lg">View Case Study</span>
+</a>
+</div>
+</div>
+<div class="relative w-full flex justify-center lg:justify-end perspective-1000">
+<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-blue-400/20 via-purple-400/20 to-pink-400/20 dark:from-blue-600/20 dark:via-purple-600/20 dark:to-pink-600/20 blur-3xl rounded-full pointer-events-none"></div>
+<div class="relative z-10 w-full max-w-lg transform transition-transform duration-500 hover:scale-[1.02] group">
+<div class="relative bg-slate-900 dark:bg-black rounded-xl p-2 shadow-2xl ring-1 ring-slate-900/10 dark:ring-white/10">
+<div class="absolute top-1 left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-slate-800 rounded-full z-20"></div>
+<div class="relative overflow-hidden rounded-lg bg-white dark:bg-slate-800 aspect-[16/10]">
+<img alt="E-commerce Dashboard Interface showing analytics and product management for artisans" class="w-full h-full object-cover object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEbKoWGxM9jc8zYlJFJ_5uTX0uT_5JewxMvx9Yx-BawHL6V48Ws4I8dH1FCGqpXoKI8LU4nl7O830NgWEMaS5AOTifecmTKcOfMxKX3Q8Q_-UzAklEMyZSgbyR-diHCcN7jkfmc1QhG8kToBtcK5Qyy3U4fkokK7gGxiieIMY4uvGo9nTfP3_T0DcQbxltdocirQSOi4pm52B9zACEH5ec1bIA2VcfctQo_TveZyTQVFYRPgn6xR71v8IzrsGXSAZPAUhn6qwaFQY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent pointer-events-none"></div>
+</div>
+<div class="absolute -bottom-3 left-[5%] right-[5%] h-3 bg-slate-800 dark:bg-slate-900 rounded-b-lg shadow-lg z-0">
+<div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-slate-700 rounded-b-sm"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</section>
+
+
+<section class="bg-background-light dark:bg-background-dark font-sans transition-colors duration-300 antialiased overflow-x-hidden">
+<div class="relative min-h-screen flex items-center justify-center p-6 lg:p-24 border-l border-r border-gray-100 dark:border-gray-800 max-w-7xl mx-auto">
+<div class="absolute inset-0 pointer-events-none flex justify-between px-24 lg:px-48 opacity-40 dark:opacity-10 z-0">
+<div class="h-full w-px bg-gray-200"></div>
+<div class="h-full w-px bg-gray-200"></div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center w-full relative z-10">
+<div class="relative group">
+<div class="gradient-blur dark:opacity-40"></div>
+<div class="relative z-10 transform transition-transform duration-500 hover:scale-[1.02] cursor-pointer">
+<img alt="3D stylized mobile phone interface showing a panda character and wellbeing stats" class="w-full h-auto object-contain max-h-[600px] drop-shadow-2xl rounded-3xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDabD30BabepbZkSP3B-n4TRN_tsPIVbw_su7n5Uzf4rciOuILAtWWl70_iWP0HETkv6ASg7z3nQIx-4mgYnYyo1iE_XkJmoQ3eQGEwar_BCFX5kh698KdgC8m_sHGsEavSZTI7GGf9pNYMsibI2F7Nh7SwqEbvpfU2EMpOUIbbJamanvjEiofD1vQ7oZrGJtA3n6NyZUzJqVN3pC3MJXa6Jq69axuX7W9EYNRhfrA4Ago_7KM7spVEy5JZqmYDQeVSGwMpO-Qqy80" style="mask-image: linear-gradient(to bottom, black 90%, transparent 100%); -webkit-mask-image: linear-gradient(to bottom, black 90%, transparent 100%);"/>
+<div class="absolute -bottom-4 -left-4 w-24 h-24 bg-primary rounded-full opacity-20 blur-xl animate-pulse"></div>
+</div>
+</div>
+<div class="flex flex-col space-y-8 max-w-xl">
+<div class="flex items-center space-x-4">
+<h2 class="text-primary font-bold text-xl tracking-wide uppercase">Popo</h2>
+<span class="px-4 py-1.5 border border-gray-300 dark:border-gray-600 rounded-full text-sm text-gray-600 dark:text-gray-300 font-medium">
+                        University project
+                    </span>
+</div>
+<h1 class="text-4xl lg:text-5xl font-bold text-text-dark dark:text-text-light leading-tight">
+                    Support parents and their tweens to develop suitable device use habits
+                </h1>
+<div class="text-gray-500 dark:text-gray-400 text-lg font-medium flex flex-wrap gap-2 items-center">
+<span>Well being</span>
+<span class="w-1.5 h-1.5 bg-gray-300 dark:bg-gray-600 rounded-full mx-2"></span>
+<span>Physical product</span>
+<span class="w-1.5 h-1.5 bg-gray-300 dark:bg-gray-600 rounded-full mx-2"></span>
+<span>Mobile App</span>
+</div>
+<div class="pt-4 group">
+<a class="inline-flex items-center space-x-4 text-text-dark dark:text-text-light hover:text-primary dark:hover:text-primary transition-colors duration-300" href="#">
+<div class="relative w-12 h-12 flex items-center justify-center border border-gray-800 dark:border-gray-200 rounded-full transition-all duration-300 group-hover:scale-110 group-hover:border-primary dark:group-hover:border-primary">
+<span class="material-icons-outlined transform -rotate-45 group-hover:rotate-0 transition-transform duration-300">arrow_forward</span>
+</div>
+<span class="text-lg font-medium sr-only">View Project</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<button class="fixed bottom-6 right-6 bg-white dark:bg-gray-800 p-3 rounded-full shadow-lg border border-gray-200 dark:border-gray-700 z-50 text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" onclick="document.documentElement.classList.toggle('dark')">
+<span class="material-icons-outlined">brightness_6</span>
+</button>
+
+</section>
+
+<section class="bg-background-light dark:bg-background-dark min-h-screen flex items-center justify-center font-sans transition-colors duration-300">
+<section class="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 overflow-hidden">
+<div class="absolute inset-y-0 left-1/2 transform -translate-x-1/2 w-px grid-line hidden lg:block z-0 pointer-events-none opacity-60"></div>
+<div class="absolute top-10 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-green-200 dark:text-green-900 hidden lg:block z-0">
+<svg class="sparkle w-12 h-12" fill="currentColor" height="48" viewBox="0 0 24 24" width="48">
+<path d="M12,0 L14,10 L24,12 L14,14 L12,24 L10,14 L0,12 L10,10 Z"></path>
+</svg>
+</div>
+<div class="absolute top-1/3 left-[55%] text-pink-300 dark:text-pink-900 hidden lg:block z-0 opacity-60">
+<svg class="sparkle w-8 h-8 delay-700" fill="currentColor" height="32" viewBox="0 0 24 24" width="32">
+<path d="M12,0 L14,10 L24,12 L14,14 L12,24 L10,14 L0,12 L10,10 Z"></path>
+</svg>
+</div>
+<div class="absolute bottom-20 right-10 lg:right-40 text-purple-200 dark:text-purple-900 z-0">
+<svg class="sparkle w-10 h-10 delay-300" fill="currentColor" height="40" viewBox="0 0 24 24" width="40">
+<path d="M12,0 L14,10 L24,12 L14,14 L12,24 L10,14 L0,12 L10,10 Z"></path>
+</svg>
+</div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
+<div class="flex flex-col space-y-8 lg:pr-8">
+<div class="flex items-center space-x-4">
+<span class="text-primary font-bold text-lg tracking-wide">E-commerce</span>
+<div class="flex items-center space-x-1 px-3 py-1 rounded-full border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-xs font-medium text-slate-600 dark:text-slate-300 shadow-sm">
+<span class="material-icons-outlined text-[14px]">auto_awesome</span>
+<span>Launched</span>
+</div>
+</div>
+<h2 class="text-4xl lg:text-5xl font-extrabold text-text-light dark:text-text-dark leading-tight tracking-tight">
+                    Redesigning an e-commerce platform for artisans
+                </h2>
+<div class="text-lg text-muted-light dark:text-muted-dark font-medium leading-relaxed">
+                    Retail • B2B • Web App • Design System
+                </div>
+<div class="pt-4">
+<a class="group inline-flex items-center text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#">
+<div class="relative flex items-center justify-center w-12 h-12 rounded-full border border-slate-300 dark:border-slate-600 group-hover:border-primary dark:group-hover:border-primary transition-colors duration-200">
+<span class="material-icons-outlined transform group-hover:translate-x-1 transition-transform duration-200">arrow_forward</span>
+</div>
+<span class="ml-4 font-semibold text-lg">View Case Study</span>
+</a>
+</div>
+</div>
+<div class="relative w-full flex justify-center lg:justify-end perspective-1000">
+<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-blue-400/20 via-purple-400/20 to-pink-400/20 dark:from-blue-600/20 dark:via-purple-600/20 dark:to-pink-600/20 blur-3xl rounded-full pointer-events-none"></div>
+<div class="relative z-10 w-full max-w-lg transform transition-transform duration-500 hover:scale-[1.02] group">
+<div class="relative bg-slate-900 dark:bg-black rounded-xl p-2 shadow-2xl ring-1 ring-slate-900/10 dark:ring-white/10">
+<div class="absolute top-1 left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-slate-800 rounded-full z-20"></div>
+<div class="relative overflow-hidden rounded-lg bg-white dark:bg-slate-800 aspect-[16/10]">
+<img alt="E-commerce Dashboard Interface showing analytics and product management for artisans" class="w-full h-full object-cover object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEbKoWGxM9jc8zYlJFJ_5uTX0uT_5JewxMvx9Yx-BawHL6V48Ws4I8dH1FCGqpXoKI8LU4nl7O830NgWEMaS5AOTifecmTKcOfMxKX3Q8Q_-UzAklEMyZSgbyR-diHCcN7jkfmc1QhG8kToBtcK5Qyy3U4fkokK7gGxiieIMY4uvGo9nTfP3_T0DcQbxltdocirQSOi4pm52B9zACEH5ec1bIA2VcfctQo_TveZyTQVFYRPgn6xR71v8IzrsGXSAZPAUhn6qwaFQY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent pointer-events-none"></div>
+</div>
+<div class="absolute -bottom-3 left-[5%] right-[5%] h-3 bg-slate-800 dark:bg-slate-900 rounded-b-lg shadow-lg z-0">
+<div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-slate-700 rounded-b-sm"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</section>
+
+<section class="bg-background-light dark:bg-background-dark font-sans transition-colors duration-300 antialiased overflow-x-hidden">
+<div class="relative min-h-screen flex items-center justify-center p-6 lg:p-24 border-l border-r border-gray-100 dark:border-gray-800 max-w-7xl mx-auto">
+<div class="absolute inset-0 pointer-events-none flex justify-between px-24 lg:px-48 opacity-40 dark:opacity-10 z-0">
+<div class="h-full w-px bg-gray-200"></div>
+<div class="h-full w-px bg-gray-200"></div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center w-full relative z-10">
+<div class="relative group">
+<div class="gradient-blur dark:opacity-40"></div>
+<div class="relative z-10 transform transition-transform duration-500 hover:scale-[1.02] cursor-pointer">
+<img alt="3D stylized mobile phone interface showing a panda character and wellbeing stats" class="w-full h-auto object-contain max-h-[600px] drop-shadow-2xl rounded-3xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDabD30BabepbZkSP3B-n4TRN_tsPIVbw_su7n5Uzf4rciOuILAtWWl70_iWP0HETkv6ASg7z3nQIx-4mgYnYyo1iE_XkJmoQ3eQGEwar_BCFX5kh698KdgC8m_sHGsEavSZTI7GGf9pNYMsibI2F7Nh7SwqEbvpfU2EMpOUIbbJamanvjEiofD1vQ7oZrGJtA3n6NyZUzJqVN3pC3MJXa6Jq69axuX7W9EYNRhfrA4Ago_7KM7spVEy5JZqmYDQeVSGwMpO-Qqy80" style="mask-image: linear-gradient(to bottom, black 90%, transparent 100%); -webkit-mask-image: linear-gradient(to bottom, black 90%, transparent 100%);"/>
+<div class="absolute -bottom-4 -left-4 w-24 h-24 bg-primary rounded-full opacity-20 blur-xl animate-pulse"></div>
+</div>
+</div>
+<div class="flex flex-col space-y-8 max-w-xl">
+<div class="flex items-center space-x-4">
+<h2 class="text-primary font-bold text-xl tracking-wide uppercase">Popo</h2>
+<span class="px-4 py-1.5 border border-gray-300 dark:border-gray-600 rounded-full text-sm text-gray-600 dark:text-gray-300 font-medium">
+                        University project
+                    </span>
+</div>
+<h1 class="text-4xl lg:text-5xl font-bold text-text-dark dark:text-text-light leading-tight">
+                    Support parents and their tweens to develop suitable device use habits
+                </h1>
+<div class="text-gray-500 dark:text-gray-400 text-lg font-medium flex flex-wrap gap-2 items-center">
+<span>Well being</span>
+<span class="w-1.5 h-1.5 bg-gray-300 dark:bg-gray-600 rounded-full mx-2"></span>
+<span>Physical product</span>
+<span class="w-1.5 h-1.5 bg-gray-300 dark:bg-gray-600 rounded-full mx-2"></span>
+<span>Mobile App</span>
+</div>
+<div class="pt-4 group">
+<a class="inline-flex items-center space-x-4 text-text-dark dark:text-text-light hover:text-primary dark:hover:text-primary transition-colors duration-300" href="#">
+<div class="relative w-12 h-12 flex items-center justify-center border border-gray-800 dark:border-gray-200 rounded-full transition-all duration-300 group-hover:scale-110 group-hover:border-primary dark:group-hover:border-primary">
+<span class="material-icons-outlined transform -rotate-45 group-hover:rotate-0 transition-transform duration-300">arrow_forward</span>
+</div>
+<span class="text-lg font-medium sr-only">View Project</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<button class="fixed bottom-6 right-6 bg-white dark:bg-gray-800 p-3 rounded-full shadow-lg border border-gray-200 dark:border-gray-700 z-50 text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" onclick="document.documentElement.classList.toggle('dark')">
+<span class="material-icons-outlined">brightness_6</span>
+</button>
+
+</section>
+
+<section class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark min-h-screen flex items-center justify-center overflow-x-hidden transition-colors duration-300">
+<main class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative flex flex-col items-center justify-center">
+<div class="absolute inset-0 pointer-events-none opacity-5 dark:opacity-10 z-0 flex justify-center">
+<div class="w-px h-full bg-black dark:bg-white mx-32 hidden md:block"></div>
+<div class="w-px h-full bg-black dark:bg-white mx-32 hidden md:block"></div>
+</div>
+<div class="relative z-10 flex flex-col items-center w-full">
+<div class="static-arc-text text-gray-800 dark:text-gray-100 mb-[-60px] md:mb-[-80px] z-20 select-none hidden sm:block">
+<span class="static-arc-char" style="transform: translateX(-50%) rotate(-75deg);">W</span>
+<span class="static-arc-char" style="transform: translateX(-50%) rotate(-68deg);">I</span>
+<span class="static-arc-char" style="transform: translateX(-50%) rotate(-62deg);">S</span>
+<span class="static-arc-char" style="transform: translateX(-50%) rotate(-55deg);">H</span>
+<span class="static-arc-char" style="transform: translateX(-50%) rotate(-45deg);">I</span>
+<span class="static-arc-char" style="transform: translateX(-50%) rotate(-38deg);">'</span>
+<span class="static-arc-char" style="transform: translateX(-50%) rotate(-32deg);">D</span>
+<span class="static-arc-char" style="transform: translateX(-50%) rotate(-20deg);">S</span>
+<span class="static-arc-char" style="transform: translateX(-50%) rotate(-12deg);">M</span>
+<span class="static-arc-char" style="transform: translateX(-50%) rotate(-4deg);">I</span>
+<span class="static-arc-char" style="transform: translateX(-50%) rotate(4deg);">L</span>
+<span class="static-arc-char" style="transform: translateX(-50%) rotate(12deg);">E</span>
+<span class="static-arc-char" style="transform: translateX(-50%) rotate(20deg);">D</span>
+<span class="static-arc-char" style="transform: translateX(-50%) rotate(32deg);">I</span>
+<span class="static-arc-char" style="transform: translateX(-50%) rotate(39deg);">N</span>
+<span class="static-arc-char" style="transform: translateX(-50%) rotate(50deg);">T</span>
+<span class="static-arc-char" style="transform: translateX(-50%) rotate(58deg);">H</span>
+<span class="static-arc-char" style="transform: translateX(-50%) rotate(66deg);">I</span>
+<span class="static-arc-char" style="transform: translateX(-50%) rotate(74deg);">S</span>
+<span class="static-arc-char" style="transform: translateX(-50%) rotate(86deg);">P</span>
+<span class="static-arc-char" style="transform: translateX(-50%) rotate(94deg);">I</span>
+<span class="static-arc-char" style="transform: translateX(-50%) rotate(102deg);">C</span>
+</div>
+<div class="sm:hidden mb-8 text-center font-display font-bold text-xl tracking-wider text-gray-800 dark:text-gray-100 uppercase">
+                Wish I'd smiled in this pic
+            </div>
+<div class="flex flex-col md:flex-row items-center justify-center w-full gap-8 md:gap-16 lg:gap-24">
+<div class="flex md:flex-col gap-6 md:gap-12 order-2 md:order-1">
+<a aria-label="LinkedIn" class="group relative flex items-center justify-center p-3 rounded-xl transition-all hover:bg-gray-100 dark:hover:bg-gray-800" href="#">
+<svg class="w-8 h-8 text-gray-800 dark:text-gray-200 group-hover:text-primary transition-colors" fill="currentColor" viewBox="0 0 24 24">
+<path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+</svg>
+<span class="sr-only">LinkedIn</span>
+</a>
+<a aria-label="Medium" class="group relative flex items-center justify-center p-3 rounded-xl transition-all hover:bg-gray-100 dark:hover:bg-gray-800" href="#">
+<svg class="w-8 h-8 text-gray-800 dark:text-gray-200 group-hover:text-primary transition-colors" fill="currentColor" viewBox="0 0 24 24">
+<path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"></path>
+</svg>
+<span class="sr-only">Medium</span>
+</a>
+</div>
+<div class="relative order-1 md:order-2 group">
+<div class="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-transparent dark:border-gray-800 shadow-2xl transition-transform duration-500 hover:scale-[1.02]">
+<img alt="Portrait of Jishnu in a blue shirt looking directly at the camera with a neutral expression" class="w-full h-full object-cover object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPJnrOXU369cxTC_wSge3MCFjH5A1T_ubY2XgjwN1m1xYU9KnispEAejcXHFJWFl9S8URzSFpY96QzgIdn-6s4mOJwUAvYSTTiC-1lTaIvlA8VBHHtd6i8U2Ro0UclwfIW40Edwm97kpvPQiuAdt71Sqxtq5pug6A-iit9HhnowGkxA90SnKA6Qy_VhBxZeGiqWB1Z3-K70joOBYIpt5rDIrgwQWrB80JNvXxg4HOpbyBA268rQMox3olERrvRMt7YAgCKQPc32UY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 dark:opacity-40 pointer-events-none"></div>
+</div>
+</div>
+<div class="flex md:flex-col gap-6 md:gap-12 order-3">
+<a aria-label="Behance" class="group relative flex items-center justify-center p-3 rounded-xl transition-all hover:bg-gray-100 dark:hover:bg-gray-800" href="#">
+<svg class="w-8 h-8 text-gray-800 dark:text-gray-200 group-hover:text-primary transition-colors" fill="currentColor" viewBox="0 0 24 24">
+<path d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 2.325-3.726 2.325-2.219 0-3.746-1.025-4.664-2.235-1.056-1.391-1.127-3.321-.129-5.266.696-1.354 2.112-2.324 3.793-2.324 1.706 0 3.018.804 3.864 1.897.973 1.258 1.146 2.584.975 4.381h-7.37c.073 1.503.955 2.571 2.656 2.571 1.096 0 1.943-.442 2.383-1.349h2.218zm-2.583-4.135c-.159-1.284-.877-2.072-2.126-2.072-1.355 0-2.384 1.053-2.536 2.072h4.662zm-12.016-1.465c0-1.745-.632-2.52-1.791-2.52-1.163 0-1.791.775-1.791 2.52 0 1.745.628 2.52 1.791 2.52 1.159 0 1.791-.775 1.791-2.52zm5.723 0c0-3.237-2.228-5.4-6.19-5.4h-6.66v11.8h7.245c3.554 0 5.605-2.428 5.605-6.4zm-7.653-5.918c2.936 0 4.191 1.152 4.191 3.42 0 2.524-1.636 3.654-3.953 3.654h-3.95v-7.074h3.712z"></path>
+</svg>
+<span class="sr-only">Behance</span>
+</a>
+<a aria-label="Product Hunt" class="group relative flex items-center justify-center p-3 rounded-xl transition-all hover:bg-gray-100 dark:hover:bg-gray-800" href="#">
+<svg class="w-8 h-8 text-gray-800 dark:text-gray-200 group-hover:text-primary transition-colors" fill="currentColor" viewBox="0 0 24 24">
+<path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-8h5c1.657 0 3 1.343 3 3s-1.343 3-3 3h-3v2zm3-5h-3v-2h3c.552 0 1 .448 1 1s-.448 1-1 1z"></path>
+</svg>
+<span class="sr-only">Product Hunt</span>
+</a>
+</div>
+</div>
+<div class="mt-8 md:mt-12 text-center">
+<h1 class="font-display font-bold text-4xl md:text-6xl text-gray-900 dark:text-white tracking-tight">
+                    Jishnu
+                </h1>
+<p class="font-body text-gray-500 dark:text-gray-400 mt-2 text-lg">Product Designer &amp; Developer</p>
+<div class="mt-8">
+<a class="inline-flex items-center px-8 py-3 bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-full font-medium hover:bg-primary dark:hover:bg-gray-200 transition-colors duration-300 shadow-lg" href="mailto:hello@example.com">
+                        Get in Touch
+                        <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</main>
+<button class="fixed bottom-6 right-6 bg-white dark:bg-gray-800 text-gray-800 dark:text-white p-3 rounded-full shadow-lg border border-gray-200 dark:border-gray-700 z-50 hover:scale-110 transition-transform" onclick="document.documentElement.classList.toggle('dark')">
+<svg class="w-6 h-6 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<svg class="w-6 h-6 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+
+</section>
+
+
+</body></html>
