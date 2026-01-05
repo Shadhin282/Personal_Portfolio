@@ -2,25 +2,30 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MdMenu, MdClose } from 'react-icons/md';
 import ThemeToggle from './ThemeToggle';
+import AboutContact from './AboutContact';
 
-const Navbar = ({ theme, toggleTheme }) => {
+const Navbar = ({ theme, toggleTheme,projectref,skillref,contactref,aboutref }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => setIsOpen(!isOpen);
 
     const navLinks = [
-        { name: 'Resume', href: 'https://drive.google.com/file/d/1MZ4FxPv_eNrZHQW0-EzDdNt-uZlVFtM6/view?usp=drive_link' },
-        { name: 'Work', href: '#' },
-        { name: 'Blog', href: '#' },
-        { name: 'About', href: '#' },
+        { name: 'Resume',ref: '', href: 'https://drive.google.com/file/d/1MZ4FxPv_eNrZHQW0-EzDdNt-uZlVFtM6/view?usp=drive_link' },
+        { name: 'Projects',ref:projectref, href: '#project' },
+        { name: 'Skills',ref:skillref, href: '#skills' },
+        { name: 'About',ref:aboutref, href: '#about' },
+        { name: 'Contact',ref:contactref, href: `#contact` },
     ];
 
     return (
         <nav className="w-full max-w-4xl mx-auto p-4 z-50 relative">
             <div className="relative flex items-center justify-between px-8 py-4 border border-nav-border-light dark:border-nav-border-dark rounded-full bg-white dark:bg-gray-800 shadow-sm transition-all duration-300">
                 <div className="flex-shrink-0">
-                    <a href="#" className="text-xl font-bold tracking-tight text-nav-text-light dark:text-nav-text-dark hover:text-black dark:hover:text-white transition-colors">
-                        Shadin Khan
+                    
+                    <a href="/" className="text-xl font-bold tracking-tight text-nav-text-light dark:text-nav-text-dark hover:text-black dark:hover:text-white transition-colors">
+                        <div className='flex items-center jusitfy-center gap-2'>
+                            <img className='w-5 h-5' src="./src/assets/logo.jpg" alt="" /> <span className='bg-gradient-text gradient-text from-green-500 to-blue-500 bg-clip-text text-transparen'>Shadin Khan</span>
+                       </div>
                     </a>
                 </div>
 
@@ -39,8 +44,8 @@ const Navbar = ({ theme, toggleTheme }) => {
                     {navLinks.map((link) => (
                         <a
                             key={link.name}
+                            onClick={() => link.ref.current.scrollIntoView({ behavior: "smooth" })}
                             href={link.href}
-                            target='_blank'
                             className="text-sm font-semibold text-nav-text-light dark:text-nav-text-dark hover:text-black dark:hover:text-white transition-colors relative group"
                         >
                             {link.name}
