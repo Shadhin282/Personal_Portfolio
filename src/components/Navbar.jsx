@@ -10,7 +10,7 @@ const Navbar = ({ theme, toggleTheme,projectref,skillref,contactref,aboutref }) 
     const toggleMenu = () => setIsOpen(!isOpen);
 
     const navLinks = [
-        { name: 'Resume',ref: '', href: 'https://drive.google.com/file/d/1MZ4FxPv_eNrZHQW0-EzDdNt-uZlVFtM6/view?usp=drive_link' },
+        { name: 'Resume',ref: '', href: 'https://drive.google.com/file/d/1lc1Oeu_o8kHz3leRiwn7r32PmbkL_MD7/view' },
         { name: 'Projects',ref:projectref, href: '#project' },
         { name: 'Skills',ref:skillref, href: '#skills' },
         { name: 'About',ref:aboutref, href: '#about' },
@@ -24,7 +24,7 @@ const Navbar = ({ theme, toggleTheme,projectref,skillref,contactref,aboutref }) 
                     
                     <a href="/" className="text-xl font-bold tracking-tight text-nav-text-light dark:text-nav-text-dark hover:text-black dark:hover:text-white transition-colors">
                         <div className='flex items-center jusitfy-center gap-2'>
-                            <img className='w-5 h-5' src="./src/assets/logo.jpg" alt="" /> <span className='bg-gradient-text gradient-text from-green-500 to-blue-500 bg-clip-text text-transparen'>Shadin Khan</span>
+                            <img className='w-5 h-5 rounded-full' src="https://i.ibb.co.com/xRZxNQC/logo-Dl-Vohp-K6.jpg" alt="" /> <span className='bg-gradient-text gradient-text from-green-500 to-blue-500 bg-clip-text text-transparen'>Shadin Khan</span>
                        </div>
                     </a>
                 </div>

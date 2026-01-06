@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import React from 'react'
 
 
@@ -90,6 +91,14 @@ export const SkillsShowcase = ({
   'data-id': dataId,
 }) => {
   return (
+    <motion.div
+            initial={{ opacity: 0, x:  50  }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className={`flex flex-col space-y-8 ${
+               "lg:order-2 lg:pl-8"  
+            }`}>
     <div id='skills' data-id={dataId} className="w-full  py-16 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Badge */}
@@ -100,12 +109,13 @@ export const SkillsShowcase = ({
         </div>
 
         {/* Title */}
-        <h2 className="text-center text-gray-700 text-xl mb-16 font-normal">
+        <h2 className="text-center dark:text-gray-300 text-gray-700 text-xl mb-16 font-normal">
           {title}
         </h2>
 
         {/* Skills Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-x-8 gap-y-12">
+          
           {skills.map((skill, index) => (
             <div key={index} className="flex flex-col items-center gap-3">
               <div className="w-16 h-16 flex items-center justify-center">
@@ -115,13 +125,15 @@ export const SkillsShowcase = ({
                   className="w-full h-full object-contain"
                 />
               </div>
-              <span className="text-gray-700 text-sm text-center font-normal">
+              <span className="text-gray-700 dark:text-gray-300 text-sm text-center font-normal">
                 {skill.name}
               </span>
             </div>
           ))}
+            
         </div>
       </div>
-    </div>
+      </div>
+      </motion.div>
   )
 }
