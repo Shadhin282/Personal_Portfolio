@@ -46,7 +46,7 @@ const Hero = () => {
         <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 text-secondary-text-light dark:text-gray-300">
           <SocialLink
             target="_blank"
-            href="https://drive.google.com/file/d/1MZ4FxPv_eNrZHQW0-EzDdNt-uZlVFtM6/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1frIXEDqTAFUd6jhdXjTttreJle-sklT3/view?usp=sharing"
             icon="far fa-file-alt"
             label="Resume"
           />

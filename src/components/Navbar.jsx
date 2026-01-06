@@ -10,7 +10,7 @@ const Navbar = ({ theme, toggleTheme,projectref,skillref,contactref,aboutref }) 
     const toggleMenu = () => setIsOpen(!isOpen);
 
     const navLinks = [
-        { name: 'Resume',ref: '', href: 'https://drive.google.com/file/d/1lc1Oeu_o8kHz3leRiwn7r32PmbkL_MD7/view' },
+        { name: 'Resume',ref: '', href: 'https://drive.google.com/file/d/1frIXEDqTAFUd6jhdXjTttreJle-sklT3/view?usp=sharing' },
         { name: 'Projects',ref:projectref, href: '#project' },
         { name: 'Skills',ref:skillref, href: '#skills' },
         { name: 'About',ref:aboutref, href: '#about' },
